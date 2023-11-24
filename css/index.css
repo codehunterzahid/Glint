@@ -72,3 +72,62 @@ body{
     top: 125%;
     right: 10%;
 }
+
+@media screen and (max-width:430px){
+    
+    .home{
+        width: 100%;
+        height: 100vh;
+    }
+    .h-text{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        padding: 0;
+        padding-top: 30%;
+    }
+    .h-text h1{
+        font-size: 30px;
+    }
+    .h-icons{
+        display: none;
+    }
+    .h-text a{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .h-icons{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 75%;
+        right: 7%;
+    }
+    .h-last{
+        position: absolute;
+        top: 90%;
+        right: 10%;
+    }
+}
+
+@media (min-width:430px) and (max-width:930px){
+    
+    .home{
+        width: 100%;
+        height: 100vh;
+    }
+    .h-text{
+        width: 80%;
+        padding-top: 45%;
+    }
+    .h-text h1{
+        font-size: 40px;
+    }
+    .h-last{
+        position: absolute;
+        top: 90%;
+        right: 10%;
+    }
+    
+    
+}
