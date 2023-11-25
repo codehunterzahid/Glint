@@ -22,7 +22,7 @@ const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
    });
 
 
-
+    // Add color to navbar background on scroll
 
    document.addEventListener('DOMContentLoaded', function () {
     var header = document.querySelector('#navbar');
