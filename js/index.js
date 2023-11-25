@@ -23,19 +23,21 @@ const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
 
 
 
-   // Add event listener to window object
-   window.addEventListener('scroll', function() {
-     // Get the navbar element
-     const navbar = document.querySelector('.navbar');
-     
-     // Check if the user has scrolled
-     if (window.scrollY > 300) {
-       // Apply CSS styling to change the background color
-       navbar.style.backgroundColor = 'green';
-       navbar.style.height = '60px';
-     } else {
-       // Reset the background color
-       navbar.style.backgroundColor = '';
-     }
-   });
-   
+
+   document.addEventListener('DOMContentLoaded', function () {
+    var header = document.querySelector('#navbar');
+
+    window.addEventListener('scroll', function () {
+      var scrollPosition = window.scrollY;
+
+      // You can adjust the scroll position value as needed
+      if (scrollPosition > 200) {
+        header.style.backgroundColor = 'green';
+      } else {
+        header.style.backgroundColor = 'transparent';
+      }
+    });
+  });
+
+
+
