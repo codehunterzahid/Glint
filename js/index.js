@@ -20,4 +20,22 @@ const counterAnim = (qSelector, start = 0, end, duration = 1000) => {
     counterAnim("#count3", 1000, 150, 2000);
     counterAnim("#count4", 500, 100, 2500);
    });
+
+
+
+   // Add event listener to window object
+   window.addEventListener('scroll', function() {
+     // Get the navbar element
+     const navbar = document.querySelector('.navbar');
+     
+     // Check if the user has scrolled
+     if (window.scrollY > 300) {
+       // Apply CSS styling to change the background color
+       navbar.style.backgroundColor = 'green';
+       navbar.style.height = '60px';
+     } else {
+       // Reset the background color
+       navbar.style.backgroundColor = '';
+     }
+   });
    
