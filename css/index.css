@@ -649,8 +649,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     width: 34px;
     line-height: 34px;
     border-radius: 3px;
-    justify-content: center;
-    display: flex;
+    padding: 10px;
 }
 
 .facebook {
